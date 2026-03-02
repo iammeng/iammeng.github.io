@@ -1,30 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="//unpkg.com/swagger-ui-dist@3/swagger-ui.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritsada S. Meng</title>
+    <style>
+        :root {
+            --bg: #f9fafb; /* Off-white สะอาดตา */
+            --text: #111827; /* สีดำเกือบสนิท อ่านง่าย */
+            --accent: #10b981; /* สีเขียว Emerald สื่อถึงสุขภาพดี */
+            --gitlab: #e24329; /* สีส้ม GitLab ยังคงอยู่ */
+            --muted: #6b7280; /* สีเทาสำหรับข้อความรอง */
+            --border: #e5e7eb; /* สีเส้นขอบอ่อนๆ */
+        }
 
-  <title>FarmStall API v1</title>
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
 
+        .content {
+            max-width: 500px;
+            text-align: center;
+            background: #ffffff; /* กล่องสีขาวสะอาด */
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); /* เงาบางๆ ให้ดูนุ่มนวล */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0;
+            letter-spacing: -1px;
+            color: var(--text);
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 10px 0 25px 0;
+            display: block;
+            font-weight: 600;
+        }
+
+        .gitlab-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            padding: 6px 16px;
+            background: #fff5f2; /* ส้มอ่อนๆ ของ GitLab */
+            border: 1px solid #ffdbd1;
+            border-radius: 30px;
+            color: var(--gitlab);
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .gitlab-dot {
+            width: 7px;
+            height: 7px;
+            background-color: var(--gitlab);
+            border-radius: 50%;
+        }
+
+        .about-section {
+            padding: 25px 0;
+            border-top: 1px solid var(--border);
+            line-height: 1.7;
+            color: var(--muted);
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .about-section strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .interests {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: var(--accent); /* ใช้สีเขียวสำหรับความสนใจ */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .interests span:not(.sep) {
+            background: #ecfdf5; /* พื้นหลังเขียวอ่อน */
+            padding: 4px 12px;
+            border-radius: 8px;
+        }
+
+        .sep {
+            color: #d1d5db;
+        }
+
+        .footer-stack {
+            margin-top: 30px;
+            font-size: 0.7rem;
+            color: #9ca3af;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+        }
+    </style>
+</head>
 <body>
 
-  <div id="eazyshop-oas" />
+    <div class="content">
+        <h1>Kritsada S. Meng (เม้ง)</h1>
+        <span class="subtitle">Software Engineer</span>
+        
+        <div class="gitlab-tag">
+            <span class="gitlab-dot"></span>
+            <span>Primary on <strong>GitLab</strong></span>
+        </div>
 
-  <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
-  <script>
+        <div class="about-section">
+            ผมหลงใหลในการสร้าง <strong>Automation Scripts</strong> และระบบ Monitoring โดยเฉพาะในโลกของ Crypto ส่วนใหญ่โปรเจกต์ของผมจะรันอยู่บน <strong>GitLab CI/CD</strong> เพื่อความเสถียรและยั่งยืน
+        </div>
 
-    window.onload = function() {
+        <div class="interests">
+            <span>IT</span>
+            <span class="sep">•</span>
+            <span>Investment</span>
+            <span class="sep">•</span>
+            <span>Diet</span>
+            <span class="sep">•</span>
+            <span>Health</span>
+            <span class="sep">•</span>
+            <span>Anime</span>
+        </div>
 
-      const ui = SwaggerUIBundle({
-        url: "openapi.yml",
-        dom_id: "#eazyshop-oas",
-        deepLinking: true,
-      })
-
-    }
-
-  </script>
+        <div class="footer-stack">
+            NODE.JS • TRADINGVIEW • BITKUB API
+        </div>
+    </div>
 
 </body>
 </html>
